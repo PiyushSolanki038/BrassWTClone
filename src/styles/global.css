@@ -1,0 +1,165 @@
+/* Common styles for forms */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Page specific styles */
+.payment, .login, .register {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Error messages */
+.error {
+  color: #dc3545;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Success messages */
+.success {
+  color: #28a745;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Add these dashboard styles to your existing global.css */
+.dashboard {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 24px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.recent-activity {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-list {
+  margin-top: 20px;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.payment-item:last-child {
+  border-bottom: none;
+}
+
+.payment-item .amount {
+  font-weight: bold;
+  color: #28a745;
+}
+
+.payment-item .date {
+  color: #666;
+}
+
+.payment-item .status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #e9ecef;
+  color: #495057;
+}
+
+.history {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.history-item p {
+  margin: 0 0 10px 0;
+  color: #666;
+}
+
+.history-item small {
+  color: #888;
+}
